@@ -1,0 +1,36 @@
+Algorithmes_Pilandrome
+
+/*--------------- Fonctios_Pilandrome----------------*/
+
+Pilandrome (char cha[], int i, int j)
+
+BEGIN
+
+	if ( i>=j )
+ 		return 1;
+	End_if
+	Else
+		if ( ch[i] <> ch[j] )
+			return 0;
+		End_if
+		Else
+			return Pilandrome (ch, i+1, j+1)
+End
+ 
+/*------------------ test ----------------------*/
+
+BEGIN
+
+char *ch="RADAR" ;
+int  i=0, j=strlen(ch)-1 ;  /* strlen est un fonctions qui permer de teste la tail d'un chaine  */
+
+	if ( Palindrome (ch,i,j):= 1)
+		  Write ("Pilandrome", ch)
+	End_if
+	else
+		  Write ("n'est pas Pilandrome", ch)
+
+	returne 0;
+
+End		
+			
